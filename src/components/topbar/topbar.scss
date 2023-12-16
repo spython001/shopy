@@ -1,10 +1,41 @@
-.top {
+.topbar {
     display: flex;
     border-bottom: 2px solid #f3f3f3;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    height: 4.5rem;
+    height: 4rem;
     z-index: 999;
     background-color: #fff;
+
+    .inputContainer{
+        
+        .searchInput{
+            padding: 12px 30px;
+            border: none;
+            background: #f7f6f6;
+            outline: none;
+            margin-right: 20px;
+            border-radius: 8px;
+            position: relative;
+            width: 14rem;
+
+            &::placeholder{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .profileContainer {
+
+        a{
+
+            .navIcon{
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-left: 2rem;
+                columns: #494949;
+            }
+        }
+    }
 }
