@@ -1,5 +1,5 @@
 import './App.css'
-import Sidebar from './components/topbar/sidebar/Sidebar'
+import Sidebar from './components/sidebar/Sidebar'
 import Topbar from './components/topbar/Topbar'
 import Product from './pages/product/Product'
 

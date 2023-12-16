@@ -2,6 +2,6 @@ import './sidebar.scss'
 
 export default function Sidebar() {
   return (
-    <div className='sidebar'>Sidebar</div>
+    <div className='sidebar'>Sidebarcsfs</div>
   )
 }
