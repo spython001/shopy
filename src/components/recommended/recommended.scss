@@ -1,3 +1,19 @@
 .recommended{
-    
+    margin-left: 15px;
+
+    .recommendedTitle{
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+
+    .recommendedBtns{
+        display: flex;
+
+        button{
+            &:hover{
+                background: #ccc;
+                color: white;
+            }
+        }
+    }
 }
