@@ -7,11 +7,19 @@
     height: 4rem;
     z-index: 999;
     background-color: #fff;
-    top: 0;
-    position: sticky;
+
+    .logoContainer {
+        
+        h1{
+            font-size: 35px;
+            font-weight: normal;
+            margin-left: 50px;
+        }
+    }
 
     .inputContainer{
-        
+        display: flex;
+
         .searchInput{
             padding: 12px 30px;
             border: none;

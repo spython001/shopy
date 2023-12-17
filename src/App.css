@@ -3,10 +3,6 @@
     margin-top: 1px;
 }
 
-.side{
-    flex: 2;
-}
-
 .mainContent{
-    flex: 10;
+    margin-left: 15rem;
 }

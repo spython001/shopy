@@ -11,8 +11,7 @@ function App() {
       <Topbar />
 
       <div className="container">
-        <div className='side'><Sidebar/></div>
-
+        <Sidebar/>
         <div className="mainContent">
           <Recommended/>
           <Product/>

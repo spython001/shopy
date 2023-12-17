@@ -2,7 +2,7 @@ import './topbar.scss'
 
 export default function Topbar() {
   return (
-    <nav className='topbar'>
+    <nav className='topbar'>   
         <div className="inputContainer">
             <input type="text" placeholder='Enter your search ...' className='searchInput'/>
         </div>
