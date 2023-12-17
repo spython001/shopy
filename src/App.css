@@ -4,5 +4,10 @@
 }
 
 .mainContent{
-    margin-left: 15rem;
+    margin-left: 5rem;
+    flex: 10;
+}
+
+.side{
+    flex: 1.5;
 }

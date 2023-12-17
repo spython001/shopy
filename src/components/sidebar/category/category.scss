@@ -7,9 +7,7 @@
     }
 
     .labels{
-        display: block;
-        align-items: center;
-        justify-content: center;
+        
         
         .labelContainer{
             display: block;
@@ -22,7 +20,7 @@
             -ms-user-select: none;
             user-select: none;
 
-            input{
+            .labelInput{
                 position: absolute;
                 opacity: 0;
                 cursor: pointer;
@@ -47,15 +45,15 @@
                     display: none;
                     top: 6.4px;
                     left: 6.4px;
-                    width: 8px;
-                    height: 8px;
+                    width: 7.5px;
+                    height: 7.5px;
                     border-radius: 50%;
                     background: white;
                 }
 
             }
             
-            input:checked + .checkmark {
+            .labelInput:checked + .checkmark {
                 background-color: #2196f3;
 
                 &::after{
