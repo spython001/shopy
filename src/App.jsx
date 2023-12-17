@@ -1,4 +1,5 @@
 import './App.css'
+import Recommended from './components/recommended/Recommended'
 import Sidebar from './components/sidebar/Sidebar'
 import Topbar from './components/topbar/Topbar'
 import Product from './pages/product/Product'
@@ -10,8 +11,12 @@ function App() {
       <Topbar />
 
       <div className="container">
-        <Sidebar />
-        <Product />
+        <div className='side'><Sidebar/></div>
+
+        <div className="mainContent">
+          <Recommended/>
+          <Product/>
+        </div>
       </div>
     </div>
   )
