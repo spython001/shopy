@@ -4,7 +4,7 @@
 export default function Card({img, title, star, reviews, newPrice,  prevPrice}) {
   return (
     <section className='card' >
-        <img src={img} alt="shoe" />
+        <img src={img} alt={title} />
       
         <div className="cardDetails">
           <h3>{title}</h3>

@@ -1,6 +1,6 @@
 import './topbar.scss'
 
-export default function Topbar() {
+export default function Topbar({query, setQuery}) {
   const handleInputChange = (e) => {
     setQuery(e.target.value)
   }

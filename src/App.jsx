@@ -17,7 +17,7 @@ function App() {
   const [query, setQuery] = useState("");
   
   const filteredItems = data.filter((data) =>
-    data.title.toLocaleLowerCase().indexOf(query.toLowerCase !== -1)
+    data.title.toLocaleLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
   //for radio buttons filter
