@@ -1,10 +1,19 @@
 import './topbar.scss'
 
 export default function Topbar() {
+  const handleInputChange = (e) => {
+    setQuery(e.target.value)
+  }
+
   return (
     <nav className='topbar'>   
         <div className="inputContainer">
-            <input type="text" placeholder='Enter your search ...' className='searchInput'/>
+            <input 
+              type="text" 
+              placeholder='Enter your search ...' 
+              className='searchInput'
+              onClick={handleInputChange}
+            />
         </div>
 
         <div className="profileContainer">
