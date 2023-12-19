@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './topbar.scss'
 
 export default function Topbar({query, setQuery}) {
@@ -12,7 +13,8 @@ export default function Topbar({query, setQuery}) {
               type="text" 
               placeholder='Enter your search ...' 
               className='searchInput'
-              onClick={handleInputChange}
+              onChange={handleInputChange}
+              value={query}
             />
         </div>
 
