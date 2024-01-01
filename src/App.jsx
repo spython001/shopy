@@ -60,6 +60,8 @@ function App() {
     ))
   }
 
+  <Card/>
+
   const result = filteredData(data, selectedCategory, query)
 
   return (
