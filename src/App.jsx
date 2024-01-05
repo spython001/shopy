@@ -10,6 +10,11 @@ import Product from './pages/product/Product'
 
 function App() {
 
+  const [product, setProduct] = useState([]);
+  const [filtered, setFiltered] = useState([]);
+
+  
+
   //for cateogory
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -60,7 +65,7 @@ function App() {
     ))
   }
 
-  <Card/>
+  <Card/> 
 
   const result = filteredData(data, selectedCategory, query)
 
