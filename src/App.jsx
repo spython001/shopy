@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Card from './components/Card'
 import Recommended from './components/recommended/Recommended'
@@ -13,6 +13,13 @@ function App() {
   const [product, setProduct] = useState([]);
   const [filtered, setFiltered] = useState([]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const products = await data;
+      console.log(products)
+    }
+    fetchData();
+  }, [])
   
 
   //for cateogory
