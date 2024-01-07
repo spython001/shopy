@@ -16,7 +16,7 @@ export default function Card({img, title, star, reviews, newPrice,  prevPrice}) 
 
           <div className="cardPrice">
             <div className="price">
-              <del>${prevPrice}</del> {newPrice}
+              <del>{prevPrice}</del> {newPrice}
             </div>
           </div>
 
