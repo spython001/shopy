@@ -88,9 +88,7 @@ function App() {
           <Recommended handleClick={handleClick}/>
           <Product result={result}/>
 
-          {filtered.map(product => {
-            return <Card key={Math.random()} product={product}/>
-          })}
+          
         </div>
       </div>
       
