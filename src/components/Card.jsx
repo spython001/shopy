@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
 //TO CONTAIN THE PRODUCT TEMPLATE FOR THE PRODUCT PAGE
 
-export default function Card({img, title, star, reviews, newPrice,  prevPrice}) {
+export default function Card({product}) {
   return (
     <section className='card' >
-        <img src={img} alt={title} />
+        <img src={product.img} alt={product.title} />
       
         <div className="cardDetails">
-          <h3>{title}</h3>
+          <h3>{product.title}</h3>
           
           <div className="cardReviews">
-            {star} {star} {star} {star} {star}
-            <span className='totalReviews'>{reviews}</span>
+            {product.star} {product.star} {product.star} {product.star} {product.star}
+            <span className='totalReviews'>{product.reviews}</span>
           </div>
 
           <div className="cardPrice">
             <div className="price">
-              <del>{prevPrice}</del> {newPrice}
+              <del>{product.prevPrice}</del> {product.newPrice}
             </div>
           </div>
 

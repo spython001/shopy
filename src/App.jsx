@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Card from './components/Card'
 import Recommended from './components/recommended/Recommended'
@@ -10,7 +10,18 @@ import Product from './pages/product/Product'
 
 function App() {
 
+  const [product, setProduct] = useState([]);
+  const [filtered, setFiltered] = useState([]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const products = await data;
+      console.log(products);
+      setProduct(products);
+      setFiltered(products);
+    }
+    fetchData();
+  }, [])
   
 
   //for cateogory
@@ -63,8 +74,6 @@ function App() {
     ))
   }
 
-  <Card/> 
-
   const result = filteredData(data, selectedCategory, query)
 
   return (
@@ -78,6 +87,10 @@ function App() {
         <div className="mainContent">
           <Recommended handleClick={handleClick}/>
           <Product result={result}/>
+
+          {filtered.map(product => {
+            return <Card key={Math.random()} product={product}/>
+          })}
         </div>
       </div>
       
